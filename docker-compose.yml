@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: php:7.2.30-apache
+    volumes:
+      - .:/hackerrank
+      - ./run.sh:/usr/local/bin/run
+    working_dir: /hackerrank
